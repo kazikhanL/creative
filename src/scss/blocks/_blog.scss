@@ -1,0 +1,45 @@
+.blog {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    &__title {
+        .section-title__main {
+            color: #222222;
+        }
+        .section-title__simbol {
+            color: #222222;
+        }
+    }
+
+    &__box {
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        max-width: 271px;
+        min-width: 200px;
+        width: 24%;
+
+        &-img {
+            width: 100%;
+        }
+
+        &-title {
+            margin-top: 44px;
+            color: $main-color;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            margin-top: 18px;
+            color: #222222;
+            font-size: 15px;
+            font-family: $ffLight;
+        }
+    }
+}

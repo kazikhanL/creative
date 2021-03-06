@@ -1,0 +1,40 @@
+.section-title {
+    width: 100%;
+    min-height: 170px;
+
+    &--position {
+        position: relative;
+        text-align: center;
+    }
+
+    &__simbol, &__main {
+        color: white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    &__simbol {
+        font-size: 170px;
+        font-family: $ffBold;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    &__main {
+        font-size: 28px;
+        z-index: 10;
+    }
+
+    &__descr {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        font-size: 22px;
+        font-family: $ffLight;
+    }
+}

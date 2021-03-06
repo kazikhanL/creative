@@ -1,0 +1,45 @@
+.main-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__input, &__message {
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        padding: 0 10px;    
+
+        &::placeholder {
+            color: white;
+            font-size: 15px;
+            font-family: $ffLight;
+        }
+    }
+
+    &__input {
+        color: white;
+        width: 33%;
+        min-width: 250px;
+        max-width: 371px;
+        height: 49px;
+        
+        &--error {
+            border: none;
+            box-shadow: 0 0 3px 3px rgba(255, 0, 0, 0.5);
+        }
+    }
+
+    &__message {
+        margin-top: 38px;
+        min-width: 100%;
+        resize: none;
+        height: 152px;
+        padding: 10px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+}

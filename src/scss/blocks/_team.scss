@@ -1,0 +1,51 @@
+.team {
+    padding-top: 71px;
+    padding-bottom: 125px;
+    min-height: 785px;
+
+    &__title {
+        .section-title__main {
+            color: #222222;
+        }
+        .section-title__simbol {
+            color: #222222;
+        }
+    }
+
+    &__box {
+        margin-top: 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__card {
+        position: relative;
+        width: 271px;
+
+        &-img {
+            width: 100%;
+        }
+
+        &-descr {
+            position: absolute;
+            bottom: -15%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 24px;
+            width: 217px;
+            height: 118px;
+            background-color: white;
+            text-align: center;
+        }
+
+        &-name {
+            color: $main-color;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        &-job {
+            margin-top: 13px;
+        }
+    }
+}

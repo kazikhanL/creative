@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+    .container {
+        max-width: 425px;
+    }
+
+    .promo {
+        min-height: 700px;
+
+        .logo {
+            margin: 0 auto;
+        }
+
+        &__links {
+            display: none;
+        }
+
+        &__main-title {
+            font-size: 70px;
+        }
+    }
+
+    .section-title {
+        &__simbol {
+            font-size: 133px;
+        }
+        &__main {
+            font-size: 20px;    
+        }
+        &__descr {
+            font-size: 18px;
+        }
+    }
+
+    .feature__card {
+        &-descr {
+            text-align: center;
+        }
+    }
+
+    .work {
+        &__line {
+            max-height: none;
+            flex-direction: column;
+
+            &-img {
+                width: 100%;
+                order: 1;
+            }
+        }
+
+        &__article {
+            width: 100%;
+
+            &-wrapper {
+                margin: 10% 5%;
+            }
+        }
+    }
+
+    .blog {
+        &__box {
+            justify-content: center;
+        }
+
+        &__card {
+            margin: 0;
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+
+    .delimiter {
+        &__box {
+            flex-direction: column;
+        }
+
+        &__card {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    .mobil {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__phone {
+            width: 100%;
+        }
+
+        &__article {
+            margin-top: 0;
+
+            &-feature:nth-child(3) {
+                width: 70%;
+            }
+            &-feature:nth-child(4) {
+                width: 80%;
+            }
+            &-feature:nth-child(5) {
+                width: 90%;
+            }
+        }
+
+        &__phone {
+            margin-top: 50px;
+        }
+    }
+
+    .team {
+        min-height: 850px;
+        
+        &__box {
+            margin-top: 80px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__card {
+            margin-top: 100px;
+            max-width: 271px;
+            width: 100%;
+        }
+    }
+
+    .main-form {
+        justify-content: center;
+
+        &__input {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        &__message {
+            min-width: 371px;
+        }
+    }
+
+    .form__title {
+        .section-title__main {
+            font-size: 17px;
+        }
+    }
+}

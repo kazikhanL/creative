@@ -1,0 +1,29 @@
+.delimiter {
+    padding: 100px 0;
+    background-color: $main-color;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__card {
+        max-width: 553px;
+        width: 47%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &-img {
+            margin-right: 25px;
+            min-width: 60px;
+            min-height: 60px;
+        }
+
+        &-text {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}

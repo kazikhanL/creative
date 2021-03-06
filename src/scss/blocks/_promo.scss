@@ -1,0 +1,116 @@
+.promo {
+    background-image: url("./../images/promo_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 993px;
+    padding-top: 21px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        margin-right: 54px;
+    }
+
+    hr {
+        margin-top: 30px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &__main-title {
+        margin: 0;
+        margin-top: 20%;
+        color: white;
+        font-size: 100px;
+        font-family: $ffBold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__sub-title {
+        color: $main-color;
+        font-size: 20px;
+        letter-spacing: 12px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__scroll {
+        margin: 0 auto;
+        margin-top: 108px;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-text {
+            color: white;
+            font-size: 13px;
+            font-family: $ffLight;
+            text-align: center;
+        }
+        &-link {
+            margin-top: 27px;
+            display: block;
+            width: 66px;
+            height: 66px;
+            border: 1px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation-name: move;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        &-arrow {
+            position: relative;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 15px;
+                height: 3px;
+                background-color: white;
+            }
+            &::before {
+                left: -2px;
+                transform: rotate(-50deg) translateY(-50%);
+            }
+            &::after {
+                right: -2px;
+                transform: rotate(50deg) translateY(-50%);
+            }
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

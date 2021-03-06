@@ -1,0 +1,19 @@
+.form {
+    padding-top: 44px;
+    padding-bottom: 100px;
+    min-height: 620px;
+    background-image: url("./../images/form_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__title {
+        .section-title__main {
+            font-size: 22px;
+        }
+    }
+
+    &__form {
+        margin-top: 75px;
+    }
+}

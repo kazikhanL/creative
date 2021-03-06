@@ -1,0 +1,21 @@
+.social {
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 21px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

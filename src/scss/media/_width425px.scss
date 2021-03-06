@@ -1,0 +1,38 @@
+@media (max-width: 425px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .promo {
+        &__main-title {
+            font-size: 52px;
+        }
+
+        &__sub-title {
+            font-size: 13px;
+            letter-spacing: 10px;
+        }
+    }
+
+    .feature .section-title__main {
+        font-size: 15px;
+    }
+
+    .main-form {
+        justify-content: center;
+
+        &__input {
+            width: 300px;
+        }
+
+        &__message {
+            min-width: 300px;
+        }
+    }
+
+    .form__title {
+        .section-title__main {
+            font-size: 12px;
+        }
+    }
+}

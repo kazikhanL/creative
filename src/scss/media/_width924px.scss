@@ -1,0 +1,96 @@
+@media (max-width: 924px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .promo__menu {
+        margin-right: 40px;
+
+        li {
+            margin-right: 25px;
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .feature {
+        &__box {
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__card {
+            margin: 20px;
+            width: 50%;
+        }
+    }
+
+    .work {
+        min-height: 555px;
+
+        &__line img {
+            height: 100%;
+        }
+
+        &__article {
+            &-wrapper {
+                margin: 3% 3%;
+            }
+
+            &-title {
+                margin-top: 5px;
+                font-size: 22px;
+            }
+
+            &-text {
+                margin-top: 12px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .blog {
+        &__box {
+            justify-content: space-around;
+        }
+
+        &__card {
+            margin-top: 35px;
+            width: 50%;
+
+            &-title {
+                margin-top: 24px;
+                text-align: center;
+            }
+        }
+    }
+
+    .delimiter {
+        &__card {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-img {
+                min-width: 44px;
+                min-height: 44px;
+            }
+
+            &-text {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    .team__card-descr {
+        height: 90px;
+    }
+}

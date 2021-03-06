@@ -1,0 +1,14 @@
+.button {
+    display: block;
+    width: 228px;
+    height: 65px;
+    border: none;
+    background-color: $main-color;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.4);
+
+    &:active {
+        box-shadow: none;
+    }
+}
